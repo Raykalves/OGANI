@@ -1,0 +1,124 @@
+*{ margin: 0;
+
+ box-sizing: border-box;
+
+
+}
+header{ height: 40px;
+    background-color: lightgray;
+
+}
+#main{
+    display: grid;
+grid-template-columns: 1fr 1.5fr 1.3fr 1.3fr 1.4fr 1fr;
+grid-template-rows: 80px 80px 431px 271px;
+
+}
+
+#main div { 
+    border: solid 1px;  
+}
+ 
+#logo {grid-column: 2;}
+
+#nav{grid-column: 3/6;}
+
+#menu{grid-column: 2;
+grid-row: 2/4;}
+#busca{
+    grid-column: 3/6;
+grid-row: 2;
+}
+#banner{
+    grid-column: 3/6;
+grid-row: 3;
+background-image: url(banner.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+font-size: 25px;
+padding: 5%;
+}
+#prod1{ grid-row: 4;
+grid-column: 2;}
+
+#prod2{ grid-row: 4;
+    grid-column: 3;}
+    
+#prod3{ grid-row: 4;
+        grid-column: 4;}
+        
+#prod4{ grid-row: 4;
+            grid-column: 5;}
+
+#gmail{
+    width: 15px;
+}
+#nav-link {
+    list-style: none;
+    padding: 0;
+display: flex;
+justify-content: space-around;
+height: 80px;
+align-items: center;
+}
+
+#drop-menu { 
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    opacity: 0;
+    z-index: -99;
+    top: 50px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+#nav-drop{
+    position: relative;
+}
+ #nav-drop:hover #drop-menu {
+    opacity: 1;
+    top: 18px;
+    z-index: 99;
+ }
+
+#nav-check{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+
+#div{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#icones{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#icones svg{
+    width: 10px;
+    margin-left: 20 px;
+    aspect-ratio: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
